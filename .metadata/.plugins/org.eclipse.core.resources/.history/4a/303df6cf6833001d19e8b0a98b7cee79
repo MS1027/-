@@ -1,0 +1,16 @@
+public class run_length{
+	public static void print_current_code(char code, int count) {
+		
+	}
+	public static void run_length_encoding(String screen) {
+		
+	}
+	public static void main(String[] args) {
+		String screen = "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
+		System.out.println("Run-length encoding(RLE) Test");
+		System.out.println("Input data : " + screen);
+		
+		System.out.print("Encoding result : ");
+		run_length_encoding(screen);
+	}
+}

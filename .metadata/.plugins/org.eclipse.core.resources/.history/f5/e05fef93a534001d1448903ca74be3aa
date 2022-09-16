@@ -1,0 +1,32 @@
+public class run_length{
+	public static void print_current_code(char code, int count) {
+		switch(code) {
+		case 'B':
+			
+		case 'W':
+			
+		}
+	}
+	public static void run_length_encoding(String screen) {
+		char code = screen.charAt(0);
+		int count = 1;
+		for(int i=0; i+1<screen.length(); i++) {
+			if(code != screen.charAt(i+1)) {
+				print_current_code(code, count);
+				count = 0;
+			}
+			else {
+				count++;
+			}
+		}
+		
+	}
+	public static void main(String[] args) {
+		String screen = "WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW";
+		System.out.println("Run-length encoding(RLE) Test");
+		System.out.println("Input data : " + screen);
+		
+		System.out.print("Encoding result : ");
+		run_length_encoding(screen);
+	}
+}
